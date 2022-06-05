@@ -28,3 +28,19 @@
         log4j.properties是日志配置文件
         webapp下新建css、images、js等文件，用来存放前端资源
         web-inf下新建views文件夹，jsp文件就放在这里面
+
+## 注意事项
+     
+    1、maven项目管理工具，如果我们不告诉他我们的代码要使用什么样的jdk版本编译的话，他就会用
+       maven-compiler-plugin默认的jdk版本来进行处理，这样就容易出现版本不匹配，以至于导致编译不通过的问题
+    2、maven在我电脑上默认使用的jdk为1.7，但是我使用的jdk版本为1.8
+    3、由于是maven没指定编译版本引起的先在pom.xml指定编译版本，添加如下指定编译版本（一般情况下和所有jdk版本保持一致，如我这里是1.8）
+   
+   ```
+     <properties>
+     <maven.compiler.source>1.8</maven.compiler.source>
+     <maven.compiler.target>1.8</maven.compiler.target>
+     </properties>
+   ```
+
+## 依赖包的选择
