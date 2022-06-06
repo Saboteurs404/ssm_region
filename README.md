@@ -138,7 +138,52 @@
        会自动加载这个jar包来识别servlet一些对象
     3、<scope>provided</scope>表示只在 编译、测试环境下使用。该依赖包在运行时（比如jdk或像tomcat这样的容器）中提供，
        不需要再打包（jar/war）时加进去，不然会和运行时的包冲突
-## 配置jdbc.properties
+
+### apache common包梳理
+    1、commons BeanUtils
+        针对bean的一个工具集。由于Bean往往是有一堆get和set组成，所以BeanUtils也是在此基础上进行
+        一些包装。它利用Java的反射机制，从动态的生成对bean的getter和setter的调用代码，到模拟创建一个动态的bean，等等
+    2、Commons Collections
+        是一个集合组件，扩展了java标准Collection API,对常用的集合操作进行了很好的封装、抽象和补充，在保证性能的同时大大简化了代码
+    3、Commons Compress
+        是一个压缩、解压缩文件的组件
+    4、Commons Configuration
+        是一个Java应用程序的配置管理工具，可以从properties或者xml文件中加载配置信息
+    5、Commons DBCP 
+        数据库连接池
+    6、Commons DBUtils
+        是JDBC工具组件，对传统操作数据库的类进行二次封装，可以把结果集转化为List
+    7、Commons Digester
+        是XML到Java对象的映射工具
+    8、Commons FileUoload
+        为web应用程序或servlet提供文件上传功能，Struts2和springmvc的文件上传组件
+    9、Commons IO
+        是处理IO的工具包，对Java.io进行扩展，提供了更加方便的IO操作
+    10、Commons Lang3
+        是处理java基本对象方法的工具类包，该类包提供对字符、数组等基本对象的操作，弥补了java.lang api基本处理方法上的不足
+    11、Commons Logging
+        提供统一的日志接口，同时兼顾轻量级和不同依赖于集体的实现，类包给中间件/日志工具开发者一个
+        简单的日志操作抽象，允许程序开发人员使用不同的具体日志实现工具
+    12、commons pool
+        提供了一整套用于实现对象池化的框架，以及若干各具特色的对象池实现，可以有效地减少对象池化时的工作量
+    13、apache HttpClient
+        曾经时apache commons的子项目，后来独立出来。HttpClient简化HTTP客户端与服务器的各种
+        通讯，实现HTTP客户端程序（也就是浏览器程序）的功能
+
+### log4j、slf4j
+    1、log4j
+        第一用途：编写程序的时候，进行调试
+        第二用途：项目上线（商业运行），查看系统的运行日志
+                日志时用来记录信息的，比如服务器的日志主要是用来记录一些访问信息，以便于出现状况时，可以根据日志来判断原因
+    2、slf4j简介
+        slf4j不同于其他日志类库，与其他有很大的不同。slf4j不是一个真正的日志实现，而是一个抽象层，它允许你在后台使用任意一个日志类库
+        slf4j所提供的核心api是一些接口以及一个LoggerFactory的工厂类
+
+### Mybatis Generator
+    是mybatis提供的一个代码生成工具。可以帮助我们生成表对应的持久化对象（po）、 操作数据库的接口（dao ）、CRUD sql和xml(mapper)
+
+## 配置jdbc.properties    
+
 ```properties
 driver=com.mysql.jdbc.Driver
 #ssm_region为我本地的数据库名

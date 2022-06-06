@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db6422a5-3928-4fc1-ac11-273d7c19d377" name="Changes" comment="Changes">
-      <change afterPath="$PROJECT_DIR$/img.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/jdbc.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +48,8 @@
     "project.structure.last.edited": "全局库",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "spring.configuration.checksum": "7caed3dc9de55bf56e6daec256db46d7"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
@@ -66,6 +64,11 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\github\ssm_region" />
     </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="jsckson-core" />
+    </option>
   </component>
   <component name="RunManager">
     <configuration name="apache-tomcat-9.0.63" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.63" ALTERNATIVE_JRE_ENABLED="false">
@@ -192,7 +195,8 @@
       <workItem from="1654413791551" duration="374000" />
       <workItem from="1654424164351" duration="3393000" />
       <workItem from="1654435767764" duration="1339000" />
-      <workItem from="1654475997894" duration="9776000" />
+      <workItem from="1654475997894" duration="10800000" />
+      <workItem from="1654501593609" duration="4116000" />
     </task>
     <task id="LOCAL-00001" summary="Changes">
       <created>1654346394799</created>
@@ -285,7 +289,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654482022508</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Changes">
+      <created>1654486087460</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1654486087460</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
