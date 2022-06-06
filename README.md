@@ -54,7 +54,7 @@
 
     2、还需注意的是spring的.RELEASW为稳定版，所以一般选择该版本，并不是越新越好
 
-## spring项目中每个jar包的作用
+### spring项目中每个jar包的作用
         
     1、commons-logging.jar
         记录程序运行时的活动日志记录
@@ -98,7 +98,7 @@
         这个jar文件包含Spring一整套mock类来辅助应用的测试。Spring测试套件使用了其中大量mock类，这样测试就更加简单。
         模拟HttpServletRequest和HttpServletResponse类在Web应用单元测试是很方便的。
 
-## mybatis常见接口和jar包介绍
+### mybatis常见接口和jar包介绍
     Mybatis是一款持久层框架，它支持定制化sql、存储过程以及高级映射。mybatis避免了几乎所有的JDBC
     代码和手动设置参数以及获取结果集。Mybatis可以使用简单XML或注解来配置和映射原生信息，将接口和java
     的POJOS(普通的java对象)映射成数据库中的记录
@@ -115,7 +115,7 @@
         接口实现类对象，然后就可以调用XxxxMapper.java接口中的方法所映射的sql语句（在xml文件中配置的sql语句）
         sqlSessionFactory接口的实现类对象是一个工厂对象，专门负责来产生sqlsession对象的
 
-## Mybatis和Spring的集成
+### Mybatis和Spring的集成
     在学习mybatis配置时，对于mybatis-config配置的时候我们发现，大致是需要配置三个方面：setting、datasource、mappers
 
     而mybatis的setting往往使用默认配置，所以我们经常配置datasource数据源与mappers映射，但学习spring之后发现，
@@ -129,4 +129,32 @@
     5）翻译Mybatis的异常到spring的DataAccessExcrption异常（数据访问异常）中
     
 **这里需要注意的是，需要考虑Mybatis-spring版本的兼容性，我们在选择spring、mybatis以及mybatis-spring时，应该注意版本之间的兼容性**
- 
+ ![img.png](img.png)
+
+### servlet api.jar的用途
+    1、支持servlet的jar包，如果你编写过servlet就知道要用HttpServletRequest和HttpServletResponse等对象，
+       这些对象都是要靠这个jar包才能使用的·
+    2、如果你安装了Tomcat，这个jar包一般在tomcat安装目录\lib文件夹下面有，当你把web项目部署到tomcat,
+       会自动加载这个jar包来识别servlet一些对象
+    3、<scope>provided</scope>表示只在 编译、测试环境下使用。该依赖包在运行时（比如jdk或像tomcat这样的容器）中提供，
+       不需要再打包（jar/war）时加进去，不然会和运行时的包冲突
+## 配置jdbc.properties
+```properties
+driver=com.mysql.jdbc.Driver
+#ssm_region为我本地的数据库名
+url=jdbc:mysql://localhost:3306/ssm_region?useUnicode=true&characterEncoding=utf-8
+username=root
+#下面输入自己数据库的密码
+password=
+#定义初始连接数
+initialSize=0
+#定义最大连接数
+maxActive=20
+#定义最大空闲
+maxIdle=20
+#定义最小空闲
+minIdle=1
+#定义最长等待时间
+maxWait=6000
+```
+    
