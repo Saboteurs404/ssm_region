@@ -128,5 +128,5 @@
     4）方便集成spring事物
     5）翻译Mybatis的异常到spring的DataAccessExcrption异常（数据访问异常）中
     
-** `这里需要注意的是，需要考虑Mybatis-spring版本的兼容性，我们在选择spring、mybatis以及mybatis-spring时，应该注意版本之间的兼容性` **
+**`这里需要注意的是，需要考虑Mybatis-spring版本的兼容性，我们在选择spring、mybatis以及mybatis-spring时，应该注意版本之间的兼容性`**
  
