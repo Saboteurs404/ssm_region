@@ -304,3 +304,47 @@ log4j是Apache的一个开源项目，通过使用log4j，我们可以控制日�
 NT的事件记录器，UNIX Syslog守护进程等；我们也可以控制每一条日志的输出格式；通过定义每一条日志信息的级别，我们能够
 更加细致地控制日志的生成过程，最令人感兴趣的是，这些可以通过一个配置文件来灵活的进行配置，而不是修改应用的代码
 
+log4j 有三个主要得主键：
+
+Loggers（记录器：日志类别或级别
+Appenders(输出源)：日志要输出得地方
+Layouts（布局）：日志以何种形式输出
+
+Loggers主键在此系统中被分为五个级别：DEBUG、INFO、WARN、ERROR和FATAL。这五个级别是有顺序的，等级依次变高
+，Log4j有一个规则：只要输出级别不低于设定级别的日志信息，假设loggers级别设定为INFO，则INFO、WARN、ERROR和FATAL级别的日志信息都会输出，
+而级别比INFO低的DEBUG则不会输出
+
+Appenders:禁用和使用日志请求时log4j的基本功能，Log4j日志系统还提供了许多强大的功能，比如允许把日志输出到不同的地方，可以根据天数或者文件的大小产生
+新的文件，可以以流的形式发送到其它地方
+常用类如下：
+org.apache.log4j.ConsoleAppender（控制台）
+org.apache.log4j.FileAppender（文件）
+org.apache.log4j.DailyRollingFileAppender（每天产生一个日志文件）
+org.apache.log4j.RollingFileAppender（文件大小到达指定尺寸的时候产生一个新的文件）
+org.apache.log4j.WriterAppender（将日志信息以流格式发送到任意指定的地方）
+
+layouts:log4j可以在appenders的后面附加Layouts来完成这个功能
+layouts提供四种日志输出样式，如根据html样式、自由指定样式、包含日志级别与信息的样式和包含日志时间、线程、类别等信息的样式。
+常用的类如下：
+org.apache.log4j.HTMLLayout（以HTML表格形式布局）
+org.apache.log4j.PatternLayout（可以灵活地指定布局模式）
+org.apache.log4j.SimpleLayout（包含日志信息的级别和信息字符串）
+org.apache.log4j.TTCCLayout（包含日志产生的时间、线程、类别等信息）
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
