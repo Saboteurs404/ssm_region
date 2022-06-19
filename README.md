@@ -331,8 +331,12 @@ org.apache.log4j.PatternLayout（可以灵活地指定布局模式）
 org.apache.log4j.SimpleLayout（包含日志信息的级别和信息字符串）
 org.apache.log4j.TTCCLayout（包含日志产生的时间、线程、类别等信息）
 
+## 配置web.xml
+ 首先web.xml是web项目的配置文件，一般的web工程都会用web.xml来配置，方便大型开发。
+web.xml主要用来配置Filter、Listener、Servlet等。但是web.xml并不是必须的，一个web工程可以没有web.xml文件
 
-
+web容器加载的顺序为servletcontext->context-param->kistener->filter->servlet/这些元素可以配置在文件中的任意位置，不会因为filter在
+web.xml文件中写在listener前面就先加载filter
 
 
 
