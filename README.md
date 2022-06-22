@@ -340,7 +340,9 @@ web.xml文件中写在listener前面就先加载filter
 
 ## 配置tomcat
 
-
+generator.properties这里面保存的是连接数据库的相关信息，是在使用mybatis-generator这个功能的时候用到的；其实在jdbc.properties是系统
+运行时用到的，这两个信息差不多，分开写是为了实现可插拔
+、
 
 
 
