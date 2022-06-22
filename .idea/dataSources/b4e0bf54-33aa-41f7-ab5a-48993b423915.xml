@@ -7,20 +7,26 @@
       <DefaultTmpEngine>InnoDB</DefaultTmpEngine>
       <ServerVersion>8.0.29</ServerVersion>
     </root>
-    <schema id="2" parent="1" name="information_schema">
+    <schema id="2" parent="1" name="canada">
       <Current>1</Current>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="3" parent="1" name="information_schema">
       <CollationName>utf8_general_ci</CollationName>
     </schema>
-    <schema id="3" parent="1" name="mysql">
+    <schema id="4" parent="1" name="library">
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
-    <schema id="4" parent="1" name="performance_schema">
+    <schema id="5" parent="1" name="mysql">
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
-    <schema id="5" parent="1" name="ssm_region">
+    <schema id="6" parent="1" name="performance_schema">
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
-    <schema id="6" parent="1" name="sys">
+    <schema id="7" parent="1" name="ssm_region">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <schema id="8" parent="1" name="sys">
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
   </database-model>

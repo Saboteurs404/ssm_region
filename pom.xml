@@ -100,7 +100,15 @@
           <version>2.0.7</version>
       </dependency>
 
-    <!--  mysql驱动包    -->
+      <!-- https://mvnrepository.com/artifact/org.mybatis.generator/mybatis-generator-core -->
+      <dependency>
+          <groupId>org.mybatis.generator</groupId>
+          <artifactId>mybatis-generator-core</artifactId>
+          <version>1.4.1</version>
+      </dependency>
+
+
+      <!--  mysql驱动包    -->
       <dependency>
           <groupId>mysql</groupId>
           <artifactId>mysql-connector-java</artifactId>
