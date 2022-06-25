@@ -345,7 +345,8 @@ generator.properties这里面保存的是连接数据库的相关信息，是在
 modelPackage是等会连接数据库自动生成的实体类保存的位置，sqlPackage是生成xml映射文件保存的位置，mapperPackage是生成数据库接口保存的位置
 table是数据库里表的名字
 
-
+## 配置junit
+如果写完一段代码，想去验证他的正确性，并不一定需要启动tomcat跑一下或者debug，这时我们就会想到可以使用测试工具来验证，这配置junit测试
 
 
 
