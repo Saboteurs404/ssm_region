@@ -13,6 +13,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db6422a5-3928-4fc1-ac11-273d7c19d377" name="Changes" comment="Changes">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b4e0bf54-33aa-41f7-ab5a-48993b423915.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b4e0bf54-33aa-41f7-ab5a-48993b423915.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring/applicationContext.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/xlh/dao/MessageMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/xlh/dao/MessageMapperTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -102,7 +105,38 @@
       <command value="jsckson-core" />
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.MessageMapperTest.testInsert">
+    <configuration name="MessageMapperTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ssm_region" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xlh.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.xlh.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.xlh.dao.MessageMapperTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MessageMapperTest.testInsert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ssm_region" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xlh.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.xlh.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.xlh.dao.MessageMapperTest" />
+      <option name="METHOD_NAME" value="testInsert" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tomcat 9.0.63" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.63" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="D:\Program\Java\jdk1.8.0_152\jre" nameIsGenerated="true">
       <deployment>
         <artifact name="ssm_region:war exploded">
@@ -223,6 +257,12 @@
         </option>
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.MessageMapperTest.testInsert" />
+        <item itemvalue="JUnit.MessageMapperTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -257,7 +297,7 @@
       <workItem from="1655903967436" duration="630000" />
       <workItem from="1655904622228" duration="256000" />
       <workItem from="1655986017281" duration="4314000" />
-      <workItem from="1656159842645" duration="2943000" />
+      <workItem from="1656159842645" duration="4797000" />
     </task>
     <task id="LOCAL-00001" summary="Changes">
       <created>1654346394799</created>
@@ -553,7 +593,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656161907909</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Changes">
+      <created>1656162896985</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1656162896985</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

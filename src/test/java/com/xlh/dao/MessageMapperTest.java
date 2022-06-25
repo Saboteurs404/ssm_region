@@ -1,6 +1,7 @@
 package com.xlh.dao;
 
 import com.xlh.entity.Message;
+import jdk.nashorn.internal.runtime.ECMAException;
 import junit.framework.TestCase;
 import org.junit.After;
 import org.junit.Before;
@@ -26,7 +27,7 @@ public class MessageMapperTest extends TestCase {
     @Before
     public void setUp() throws Exception {
         //加载spring配置文件
-        applicationContext = new ClassPathXmlApplicationContext("classpath:spring.applicationContext,xml");
+        applicationContext = new ClassPathXmlApplicationContext("classpath:spring/applicationContext.xml");
         //导入需要测试的
         mapper= applicationContext.getBean(MessageMapper.class);
     }
@@ -35,7 +36,7 @@ public class MessageMapperTest extends TestCase {
     }
 
     @Test
-    public void testInsert() {
+    public void testInsert() throws Exception {
         Message message=new Message();
         message.setCommand("吃饭");
         message.setContent("睡觉");
