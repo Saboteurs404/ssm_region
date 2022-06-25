@@ -1,6 +1,9 @@
 package com.xlh.dao;
 
 import junit.framework.TestCase;
+import org.junit.Before;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
 
 /**
  * @author Xlh
@@ -9,6 +12,12 @@ import junit.framework.TestCase;
 
 public class MessageMapperTest extends TestCase {
 
+    private ApplicationContext applicationcontext;
+
+    @Autowired
+    private MessageMapper mapper;
+
+    @Before
     public void setUp() throws Exception {
         super.setUp();
     }
