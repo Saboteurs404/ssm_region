@@ -390,7 +390,12 @@ JUnit4使用Java5中的注解（annotation），以下是JUnit4常用的几个an
 每一个测试方法的调用顺序为：
 @Before -> @Test -> @After; 
 
-
+## 遇到的问题
+### Mysql 8.0以上版本的数据库连接有所不同
+·1、Mysql 8.0以上版本驱动包版本MySQL-connector-Java-8.0.23
+·2、com.mysql.jdbc.Driver更换为com.mysql.cj.jdbc.Driver
+·3、MySQL 8.0以上版本不需要建立SSL连接的，需要显示关闭
+·4、最后需要设置CST
 
 
 
