@@ -3,7 +3,7 @@
         "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
 <generatorConfiguration>
     <!-- 导入配置属性 -->
-    <properties resource="generator.properties" />
+    <properties resource="generator.properties"/>
 
     <classPathEntry
     location="E:\LocalRepository\maven-repository\mysql\mysql-connector-java\8.0.29\mysql-connector-java-8.0.29.jar"
@@ -33,7 +33,7 @@
 
         <javaClientGenerator targetPackage="${mapperPackage}"
                              targetProject="${mapperProject}"
-                             type="XMLMAPPER" />
+                             type="XML-MAPPER" />
 
         <!-- 如果需要统配所有表，直接使用sql的通配符 %即可 -->
         <table schema="" tableName="${table}" enableCountByExample="false"

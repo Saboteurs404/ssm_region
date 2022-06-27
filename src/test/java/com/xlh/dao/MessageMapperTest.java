@@ -17,7 +17,7 @@ import static  org.junit.Assert.*;
  * @create 2022-06-25 20:42
  */
 
-public class MessageMapperTest extends TestCase {
+public class MessageMapperTest {
 
     private ApplicationContext applicationContext;
 
