@@ -100,13 +100,20 @@
           <version>2.0.7</version>
       </dependency>
 
+      <dependency>
+          <groupId>org.mybatis.generator</groupId>
+          <artifactId>mybatis-generator-core</artifactId>
+          <version>1.4.1</version>
+      </dependency>
+
 
       <!--  mysql驱动包    -->
       <dependency>
           <groupId>mysql</groupId>
           <artifactId>mysql-connector-java</artifactId>
-          <version>8.0.29</version>
+          <version>8.0.25</version>
       </dependency>
+
 
     <!--   junit测试包   -->
     <dependency>
