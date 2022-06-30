@@ -400,7 +400,12 @@ JUnit4使用Java5中的注解（annotation），以下是JUnit4常用的几个an
 经过一系列无厘头操作，终于解决了mysql数据可用户名设置和使用的不同的问题，虽然我也不知这是为什么，但也只能这样子了
 
 
+## generatorConfig.xml文件中标签配置详解
+1、properties标签：用来指定外部的属性元素，引入属性文件后，可以在配置中使用${property}这种形式的引用，通过这种方式引用属性文件中的属性值，
 
+（1）此标签具备两个属性，分别是url和resource，二者只能用其一，而且用法各有不同。
 
+  resource 指定 classpath 下的属性文件，类似 com/mypro ect/generatorConfig.properties 这样的属性值。
+  url 指定文件系统上的特定位置，例如file://C /myfolder/generatorConfig.properties
 
 
