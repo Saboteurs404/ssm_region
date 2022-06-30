@@ -410,3 +410,10 @@ JUnit4使用Java5中的注解（annotation），以下是JUnit4常用的几个an
 
 
 ## 简单页面配置
+我们首先修改index.jsp文件，实现一个页面的跳转
+在views文件下建一个jsp文件，就是上面所需要跳转的页面
+对应的实现页面完善功能，增加映射，可以处理跳转中的/message/ge做出响应，在controller包里面新建java文件，格式：***Controller.java,
+以示他是用来控制请求的，这里新建文件messageController.java
+在controller里开头加一个@Controller，@Controller标识一个spring类是Spring Mvc Controller处理器，也就是@Contrller,这个文件就会被
+spring认为是处理请求的
+接着写函数，@RequestMapping()里面写链接，@RequestMapping注解可以在控制器类的级别和/或其中的方法的级别上使用
