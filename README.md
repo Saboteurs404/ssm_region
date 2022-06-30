@@ -409,3 +409,4 @@ JUnit4使用Java5中的注解（annotation），以下是JUnit4常用的几个an
   url 指定文件系统上的特定位置，例如file://C /myfolder/generatorConfig.properties
 
 
+## 简单页面配置
