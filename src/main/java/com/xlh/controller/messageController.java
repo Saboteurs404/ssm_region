@@ -19,8 +19,8 @@ public class messageController {
         return "reach";
     }
 
-    @RequestMapping(value="/message/detail/data={userName}")
-    public String goDetail(@PathVariable("userName")String data, Model model){
+    @RequestMapping("/message/detail/data={username}")
+    public String goDetail(@PathVariable("username")String data, Model model){
         model.addAttribute("data",data);
         return "detail";
     }

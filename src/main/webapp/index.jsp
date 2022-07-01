@@ -3,9 +3,10 @@
 <body>
 <h2>Hello World!</h2>
 <a href="/message/ge">进行跳转</a>
+
 <div>
-    userName:<input type="text" id="userName" name="userName"/>
-    <input type="button" value="查找用户" onclick="Search()"/>
+    userName:<input type="text" id="userName" name="userName">
+    <input type="button" value="查找用户" onclick="Search()">
 
 </div>
 <h2>form----------get</h2>
