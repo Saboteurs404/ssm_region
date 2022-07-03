@@ -410,10 +410,53 @@ JUnit4使用Java5中的注解（annotation），以下是JUnit4常用的几个an
 
 
 ## 简单页面配置
+
 我们首先修改index.jsp文件，实现一个页面的跳转
+
 在views文件下建一个jsp文件，就是上面所需要跳转的页面
+
 对应的实现页面完善功能，增加映射，可以处理跳转中的/message/ge做出响应，在controller包里面新建java文件，格式：***Controller.java,
+
 以示他是用来控制请求的，这里新建文件messageController.java
+
 在controller里开头加一个@Controller，@Controller标识一个spring类是Spring Mvc Controller处理器，也就是@Contrller,这个文件就会被
-spring认为是处理请求的
+
+spring认为是处理请求的 
+
 接着写函数，@RequestMapping()里面写链接，@RequestMapping注解可以在控制器类的级别和/或其中的方法的级别上使用
+
+
+## form表单
+
+1、get请求会向数据库发送索取数据的请求，从而来获取信息，该请求就像数据库的select操作一样，只是来查询数据的，不会修改，增加数据，不会影响资源的内容，
+
+即该请求不会产生副作用，无论进行多少次，结果都是一样的
+
+2、与GET不同的是，PUT请求是向服务器端发送数据的，从而改变信息，该请求就像数据库的update操作一样，用来修改数据的内容，但是不会增加数据的种类等，也就是说无论进行多少次PUT操作，其结果并没有不同。
+
+3、POST请求同PUT请求类似，都是向服务器端发送数据的，但是该请求会改变数据的种类等资源，就像数据库的insert操作一样，会创建新的内容。几乎目前所有的提交操作都是用POST请求的。
+
+4、DELETE请求顾名思义，就是用来删除某一个资源的，该请求就像数据库的delete操作。
+
+在实际操作的时候，就get和post两种用的比较多。这里主要介绍get和post
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
