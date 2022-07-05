@@ -3,7 +3,7 @@
         "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
 <generatorConfiguration>
     <!--导入属性配置 -->
-    <properties url="E:\github\ssm_region\src\main\resources\generator.properties"/>
+    <properties resource="generator.properties"/>
 
     <classPathEntry
             location="E:\LocalRepository\maven-repository\mysql\mysql-connector-java\8.0.25\mysql-connector-java-8.0.25.jar"/>
@@ -29,14 +29,14 @@
             <property name="forceBigDecimals" value="false" />
         </javaTypeResolver>
 
-        <javaModelGenerator targetPackage="com.xlh.entity"
-                            targetProject="src/main/java" />
-        <sqlMapGenerator targetPackage="sqlmap" targetProject="src/main/resources" />
-        <javaClientGenerator targetPackage="com.xlh.dao"
-                             targetProject="src/main/java" type="XML-MAPPER" />
+        <javaModelGenerator targetPackage="${modelPackage}"
+                            targetProject="${modelProject}" />
+        <sqlMapGenerator targetPackage="${sqlPackage}" targetProject="${sqlProject}" />
+        <javaClientGenerator targetPackage="${mapperPackage}"
+                             targetProject="${mapperProject}" type="XMLMAPPER" />
 
         <!-- 如果需要通配所有表 直接用sql的通配符    %即可 -->
-        <table schema="" tableName="message" enableCountByExample="false"
+        <table schema="" tableName="${table}" enableCountByExample="false"
                enableUpdateByExample="false" enableDeleteByExample="false"
                enableSelectByExample="false" selectByExampleQueryId="false"/>
 
