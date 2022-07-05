@@ -1,5 +1,7 @@
 package com.xlh.service;
 
+import com.xlh.entity.Userinfo;
+
 import java.util.ArrayList;
 
 /**

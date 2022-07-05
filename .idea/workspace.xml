@@ -13,14 +13,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db6422a5-3928-4fc1-ac11-273d7c19d377" name="Changes" comment="Changes">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xlh/service/UserinfoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xlh/controller/messageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xlh/controller/messageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/generator.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/generator.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xlh/entity/Userinfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xlh/entity/Userinfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xlh/service/UserinfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xlh/service/UserinfoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sqlmap/UserinfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sqlmap/UserinfoMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +66,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -325,20 +321,7 @@
       <workItem from="1656928313803" duration="601000" />
       <workItem from="1656945227257" duration="34000" />
       <workItem from="1657027239452" duration="3003000" />
-    </task>
-    <task id="LOCAL-00007" summary="Changes">
-      <created>1654436645150</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1654436645150</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Changes">
-      <created>1654481454090</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1654481454090</updated>
+      <workItem from="1657030299355" duration="413000" />
     </task>
     <task id="LOCAL-00009" summary="Changes">
       <created>1654481591343</created>
@@ -669,7 +652,21 @@
       <option name="project" value="LOCAL" />
       <updated>1656854162030</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="Changes">
+      <created>1657030563119</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1657030563121</updated>
+    </task>
+    <task id="LOCAL-00057" summary="Changes">
+      <created>1657030591906</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1657030591906</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -700,6 +697,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Changes" />
     <option name="LAST_COMMIT_MESSAGE" value="Changes" />
   </component>
