@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import javax.servlet.http.HttpSession;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -28,15 +29,30 @@ public class userController {
         return "register";
     }
 
+    @RequestMapping(value = "user/userinfo",method = RequestMethod.GET)
+    public String userinfo(Model model,HttpSession session){
+        Userinfo user=(Userinfo)session.getAttribute("userinfo");
+        if(user!=null){
+            model.addAttribute("user",user);
+        }
+        return "userinfo";
+    }
+    @RequestMapping(value = "/user/logout",method=RequestMethod.GET)
+    public String logout(HttpSession session){
+        session.invalidate();
+        //session.removeAttributr("user);
+        return "login";
+    }
+
     @RequestMapping(value = "/user/register",method = RequestMethod.POST)
     public String addUser(@ModelAttribute Userinfo, Model model){
         Userinfo record=new Userinfo();
-        record.setUsername(user.getUsername());
+        record.setUsername(record.getUsername());
         List<Userinfo> list=userService.selectSelective(record);
         if(list.size()==0){
-            user.setCreatetime(new Date());
-            user.setPw(Encryption.MD5(user.getPw()));
-            if(userService.insert(user)==1){
+            record.setCreatetime(new Date());
+            record.setPassword(Encryption.MD5(record.getPassword()));
+            if(userService.insert(record)==1){
                 model.addAttribute("status",0);
             }else{
                 model.addAttribute("status",1);
@@ -56,12 +72,12 @@ public class userController {
     public String loginValidate(HttpSession session, Model model, @ModelAttribute Userinfo user) {
         List<Userinfo> list = new ArrayList<Userinfo>();
         Userinfo record  = new Userinfo();
-        record.setName(user.getName());
+        record.setUsername(user.getUsername());
         list = userService.selectSelective(record);
         if (list.size() == 0) {
             model.addAttribute("status", 1);
         } else {
-            record.setPw(Encryption.MD5(user.getPw()));
+            record.setPassword(Encryption.MD5(user.getPassword()));
             list = userService.selectSelective(record);
             if (list.size() == 0) {
                 model.addAttribute("status", 2);
@@ -74,20 +90,6 @@ public class userController {
         return "login";
     }
 
-    @RequestMapping(value = "user/userinfo",method = RequestMethod.GET)
-        public String userinfo(Model model,HttpSession session){
-        Userinfo user={Userinfo} session.getAttribute("userinfo");
-        if(user!=null){
-            model.addAttribute("user",user);
-        }
-        return "userinfo";
-    }
-    @RequestMapping(value = "/user/logout",method=RequestMethod.GET)
-        public String logout(HttpSession session){
-        session.invalidate();
-        //session.removeAttributr("user);
-        return "login";
-    }
 }
 
 
