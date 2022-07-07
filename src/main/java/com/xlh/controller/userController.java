@@ -29,23 +29,9 @@ public class userController {
         return "register";
     }
 
-    @RequestMapping(value = "user/userinfo",method = RequestMethod.GET)
-    public String userinfo(Model model,HttpSession session){
-        Userinfo user=(Userinfo)session.getAttribute("userinfo");
-        if(user!=null){
-            model.addAttribute("user",user);
-        }
-        return "userinfo";
-    }
-    @RequestMapping(value = "/user/logout",method=RequestMethod.GET)
-    public String logout(HttpSession session){
-        session.invalidate();
-        //session.removeAttributr("user);
-        return "login";
-    }
 
     @RequestMapping(value = "/user/register",method = RequestMethod.POST)
-    public String addUser(@ModelAttribute Userinfo, Model model){
+    public String addUser(@ModelAttribute Userinfo user, Model model){
         Userinfo record=new Userinfo();
         record.setUsername(record.getUsername());
         List<Userinfo> list=userService.selectSelective(record);
@@ -90,6 +76,21 @@ public class userController {
         return "login";
     }
 
+
+    @RequestMapping(value = "user/userinfo",method = RequestMethod.GET)
+    public String userinfo(Model model,HttpSession session){
+        Userinfo user=(Userinfo)session.getAttribute("userinfo");
+        if(user!=null){
+            model.addAttribute("user",user);
+        }
+        return "userinfo";
+    }
+    @RequestMapping(value = "/user/logout",method=RequestMethod.GET)
+    public String logout(HttpSession session){
+        session.invalidate();
+        //session.removeAttributr("user);
+        return "login";
+    }
 }
 
 
