@@ -31,7 +31,7 @@ public class userController {
     @RequestMapping(value = "/user/register",method = RequestMethod.POST)
     public String addUser(@ModelAttribute Userinfo, Model model){
         Userinfo record=new Userinfo();
-        record.setName(user.getName());
+        record.setUsername(user.getUsername());
         List<Userinfo> list=userService.selectSelective(record);
         if(list.size()==0){
             user.setCreatetime(new Date());
@@ -82,7 +82,12 @@ public class userController {
         }
         return "userinfo";
     }
-
+    @RequestMapping(value = "/user/logout",method=RequestMethod.GET)
+        public String logout(HttpSession session){
+        session.invalidate();
+        //session.removeAttributr("user);
+        return "login";
+    }
 }
 
 
