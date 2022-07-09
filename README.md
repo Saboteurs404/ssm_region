@@ -443,10 +443,10 @@ spring认为是处理请求的
 
 
 ## 控制层具体实现过程
+
 ```java
 package com.xlh.controller;
 
-import com.xlh.entity.Userinfo;
 import com.xlh.service.UserinfoService;
 import com.xlh.util.Encryption;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -470,32 +470,32 @@ public class userController {
     @Autowired
     private UserinfoService userService;
 
-    @RequestMapping(value = "/user/register",method = RequestMethod.GET)
-    public String register(){
+    @RequestMapping(value = "/user/register", method = RequestMethod.GET)
+    public String register() {
         return "register";
     }
 
 
-    @RequestMapping(value = "/user/register",method = RequestMethod.POST)
-    public String addUser(@ModelAttribute Userinfo user, Model model){
-        Userinfo record=new Userinfo();
+    @RequestMapping(value = "/user/register", method = RequestMethod.POST)
+    public String addUser(@ModelAttribute Userinfo user, Model model) {
+        Userinfo record = new Userinfo();
         record.setUsername(record.getUsername());
-        List<Userinfo> list=userService.selectSelective(record);
-        if(list.size()==0){
+        List<Userinfo> list = userService.selectSelective(record);
+        if (list.size() == 0) {
             record.setCreatetime(new Date());
             record.setPassword(Encryption.MD5(record.getPassword()));
-            if(userService.insert(record)==1){
-                model.addAttribute("status",0);
-            }else{
-                model.addAttribute("status",1);
+            if (userService.insert(record) == 1) {
+                model.addAttribute("status", 0);
+            } else {
+                model.addAttribute("status", 1);
             }
-        }else{
-            model.addAttribute("status",2);
+        } else {
+            model.addAttribute("status", 2);
         }
         return "register";
     }
 
-    @RequestMapping(value="/user/login", method = RequestMethod.GET)
+    @RequestMapping(value = "/user/login", method = RequestMethod.GET)
     public String login() {
         return "login";
     }
@@ -503,7 +503,7 @@ public class userController {
     @RequestMapping(value = "/user/login", method = RequestMethod.POST)
     public String loginValidate(HttpSession session, Model model, @ModelAttribute Userinfo user) {
         List<Userinfo> list = new ArrayList<Userinfo>();
-        Userinfo record  = new Userinfo();
+        Userinfo record = new Userinfo();
         record.setUsername(user.getUsername());
         list = userService.selectSelective(record);
         if (list.size() == 0) {
@@ -523,16 +523,17 @@ public class userController {
     }
 
 
-    @RequestMapping(value = "user/userinfo",method = RequestMethod.GET)
-    public String userinfo(Model model,HttpSession session){
-        Userinfo user=(Userinfo)session.getAttribute("userinfo");
-        if(user!=null){
-            model.addAttribute("user",user);
+    @RequestMapping(value = "user/userinfo", method = RequestMethod.GET)
+    public String userinfo(Model model, HttpSession session) {
+        Userinfo user = (Userinfo) session.getAttribute("userinfo");
+        if (user != null) {
+            model.addAttribute("user", user);
         }
         return "userinfo";
     }
-    @RequestMapping(value = "/user/logout",method=RequestMethod.GET)
-    public String logout(HttpSession session){
+
+    @RequestMapping(value = "/user/logout", method = RequestMethod.GET)
+    public String logout(HttpSession session) {
         session.invalidate();
         //session.removeAttributr("user);
         return "login";

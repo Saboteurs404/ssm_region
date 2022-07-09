@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class messageController {
     @RequestMapping("/message/ge")
     public String goTest(){
-        return "reach";
+        return "register";
     }
 
     @RequestMapping("/message/detail/data={username}")

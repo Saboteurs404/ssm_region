@@ -5,7 +5,7 @@
   </component>
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="ssm_region:war" />
+      <artifact name="ssm_region:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
@@ -14,7 +14,11 @@
   <component name="ChangeListManager">
     <list default="true" id="db6422a5-3928-4fc1-ac11-273d7c19d377" name="Changes" comment="Changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xlh/dao/UserinfoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xlh/dao/UserinfoMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xlh/controller/messageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xlh/controller/messageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xlh/dao/UserinfoMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xlh/entity/Userinfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sqlmap/UserinfoMapper.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,36 +67,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit3",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3": "junit.framework.TestCase",
-    "import_schema_mapping": "<schema-mapping><databases><list><schema-mapping-item><source-data-source-id>682f5c9d-26ce-4ea1-be21-55435780bf93</source-data-source-id><source-path>schema/\"ssm_region\"</source-path><target-data-source-id>682f5c9d-26ce-4ea1-be21-55435780bf93</target-data-source-id><target-path>schema/\"ssm_region\"</target-path></schema-mapping-item></list></databases></schema-mapping>",
-    "jdk.selected.JAVA_MODULE": "1.8",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "工件",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "advanced.settings",
-    "spring.configuration.checksum": "7caed3dc9de55bf56e6daec256db46d7"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit3&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3&quot;: &quot;junit.framework.TestCase&quot;,
+    &quot;import_schema_mapping&quot;: &quot;&lt;schema-mapping&gt;&lt;databases&gt;&lt;list&gt;&lt;schema-mapping-item&gt;&lt;source-data-source-id&gt;682f5c9d-26ce-4ea1-be21-55435780bf93&lt;/source-data-source-id&gt;&lt;source-path&gt;schema/\&quot;ssm_region\&quot;&lt;/source-path&gt;&lt;target-data-source-id&gt;682f5c9d-26ce-4ea1-be21-55435780bf93&lt;/target-data-source-id&gt;&lt;target-path&gt;schema/\&quot;ssm_region\&quot;&lt;/target-path&gt;&lt;/schema-mapping-item&gt;&lt;/list&gt;&lt;/databases&gt;&lt;/schema-mapping&gt;&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;工件&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;7caed3dc9de55bf56e6daec256db46d7&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ],
-    "RunConfigurationTargetLRU": [
-      "b4e0bf54-33aa-41f7-ab5a-48993b423915/schema/\"ssm_region\""
+    &quot;RunConfigurationTargetLRU&quot;: [
+      &quot;b4e0bf54-33aa-41f7-ab5a-48993b423915/schema/\&quot;ssm_region\&quot;&quot;
+    ],
+    &quot;com.intellij.ide.scratch.LRUPopupBuilder$1/SQL 方言&quot;: [
+      &quot;MySQL&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RebelAgentSelection">
     <selection>jr</selection>
   </component>
@@ -112,7 +119,7 @@
       <command value="jsckson-core" />
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat 服务器.register.jsp (1)">
+  <component name="RunManager" selected="Tomcat 服务器.Tomcat 9.0.63">
     <configuration name="MessageMapperTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ssm_region" />
       <extension name="coverage">
@@ -404,13 +411,9 @@
       <workItem from="1657030299355" duration="433000" />
       <workItem from="1657115201782" duration="1875000" />
       <workItem from="1657200222747" duration="4118000" />
-    </task>
-    <task id="LOCAL-00018" summary="Changes">
-      <created>1654688358553</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1654688358553</updated>
+      <workItem from="1657288334670" duration="132000" />
+      <workItem from="1657373160939" duration="1186000" />
+      <workItem from="1657374376390" duration="640000" />
     </task>
     <task id="LOCAL-00019" summary="Changes">
       <created>1654861148606</created>
@@ -748,7 +751,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657204276966</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="Changes">
+      <created>1657288455824</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1657288455825</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
