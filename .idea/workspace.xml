@@ -12,7 +12,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db6422a5-3928-4fc1-ac11-273d7c19d377" name="Changes" comment="Changes" />
+    <list default="true" id="db6422a5-3928-4fc1-ac11-273d7c19d377" name="Changes" comment="Changes">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/logout.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/682f5c9d-26ce-4ea1-be21-55435780bf93.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/682f5c9d-26ce-4ea1-be21-55435780bf93.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/userinfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/userinfo.jsp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -407,13 +414,8 @@
       <workItem from="1657288334670" duration="132000" />
       <workItem from="1657373160939" duration="1186000" />
       <workItem from="1657374376390" duration="701000" />
-    </task>
-    <task id="LOCAL-00020" summary="Changes">
-      <created>1655112771273</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1655112771273</updated>
+      <workItem from="1657458932788" duration="348000" />
+      <workItem from="1657546224794" duration="1534000" />
     </task>
     <task id="LOCAL-00021" summary="Changes">
       <created>1655559886119</created>
@@ -751,7 +753,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657375068017</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="Changes">
+      <created>1657459171833</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1657459171835</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

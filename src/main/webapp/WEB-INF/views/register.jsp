@@ -13,8 +13,8 @@
 <body>
 <div>
     <form id="zc" action="/user/login" method="post">
-        用户名：<input type="text" required id="name" name="name"><br>
-        密码：<input type="password" required="pw" name="pw"><br>
+        用户名：<input type="text" required id="userName" name="userName"><br>
+        密码：<input type="password" required id="password" name="password"><br>
         <input type="submit" value="登录">
         <input type="button" value="注册" onclick="location.href='/user/register'">
     </form>

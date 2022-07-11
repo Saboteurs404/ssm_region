@@ -13,7 +13,7 @@
 <body>
 <div>
   <c:if test="${not empty user}">
-    <div>欢迎您，${user.name}${user.sex?'女士':'先生'}
+    <div>欢迎您，${user.username}${user.sex?'女士':'先生'}
     <a href="/user/logout">注销</a> </div>
   </c:if>
   <c:if test="${empty user}">
