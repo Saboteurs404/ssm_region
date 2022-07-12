@@ -22,7 +22,7 @@
 </body>
 <script>
     //对应后台返回的提示
-    if ('${status}'!=''){
+    if ('${status}'!==''){
         if('${status}'==0){
             alert('登录成功，即将跳转至用户详情页！');
             location.href='/user/userinfo'
